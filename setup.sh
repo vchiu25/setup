@@ -7,9 +7,10 @@ sudo apt-get update
 sudo apt-get install -y vim screen
 
 # Install Python Anaconda
-wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda-2.3.0-Linux-x86_64.sh | sh
-sudo conda update
-sudo conda install sklearn
+wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda-2.3.0-Linux-x86_64.sh
+# require manual command to install
+#sudo conda update
+#sudo conda install sklearn
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
