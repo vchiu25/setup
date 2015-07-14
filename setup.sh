@@ -18,14 +18,14 @@ sudo apt-get install -y vim screen
 sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
 # Install sklearn
-sudo apt-get install build-essential python-dev python-setuptools \
+sudo apt-get install -y build-essential python-dev python-setuptools \
                      python-numpy python-scipy \
                      libatlas-dev libatlas3gf-base
 sudo update-alternatives --set libblas.so.3 \
     /usr/lib/atlas-base/atlas/libblas.so.3
 sudo update-alternatives --set liblapack.so.3 \
     /usr/lib/atlas-base/atlas/liblapack.so.3
-sudo apt-get install python-matplotlib
+sudo apt-get install -y python-matplotlib
 pip install --user --install-option="--prefix=" -U scikit-learn
 
     
