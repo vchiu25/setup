@@ -10,12 +10,16 @@ git config --global user.name "Vincent"
 sudo apt-get update
 sudo apt-get install -y vim screen
 
+### Data Analyst Package
+
 # Install Python Anaconda
 #wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda-2.3.0-Linux-x86_64.sh
 #export PATH=/home/vchiu/anaconda/bin:$PATH
 
 # Install python scientifica libaray
-sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+sudo apt-get install -y python-numpy python-scipy python-matplotlib \
+                     ipython ipython-notebook python-pandas \
+                     python-sympy python-nose
 
 # Install sklearn
 sudo apt-get install -y build-essential python-dev python-setuptools \
@@ -25,10 +29,11 @@ sudo update-alternatives --set libblas.so.3 \
     /usr/lib/atlas-base/atlas/libblas.so.3
 sudo update-alternatives --set liblapack.so.3 \
     /usr/lib/atlas-base/atlas/liblapack.so.3
-sudo apt-get install -y python-matplotlib
-pip install --user --install-option="--prefix=" -U scikit-learn
+sudo apt-get install -y python-matplotlib python-pip
+sudo pip install --user --install-option="--prefix=" -U scikit-learn
 
-    
+
+### Startup ENgineering Package
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
 sudo apt-get install -y git
