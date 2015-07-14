@@ -2,6 +2,10 @@
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
 # for headless setup. 
 
+# Setup git
+git config --global user.email "vchiu25@users.noreply.github.com"
+git config --global user.name "Vincent"
+
 # Install vim and screen
 sudo apt-get update
 sudo apt-get install -y vim screen
